@@ -1,0 +1,38 @@
+<div class="tablediv">
+          <div class="autor">
+            <img src="autor/1.jpg" class="imageautor">
+            <div class="imageautor">
+                <p>
+                  Александр Сергеевич Пушкин является одним из величайших поэтов в русской литературе. Кто из нас не знаком с его творчеством? Сказки, поэмы, стихи Пушкина у всех в памяти.
+                </p>
+            </div>
+          </div>
+          <div class="autor">
+            <img src="autor/2.jpg" class="imageautor">
+          </div>
+          <div class="autor"><img src="autor/3.jpg" class="imageautor"></div>
+          <div class="autor"><img src="autor/4.jpg" class="imageautor"></div>
+        </div>
+.imageautor{
+	max-width: 30%;
+	padding: 4% 8%;
+  	float: left; /* fix for  buggy browsers */
+  	display: table-column;
+}
+img{
+	border-radius: 30%;
+}
+p{
+	font-weight: 900;
+	color: blue;
+}
+.autor{
+	display: table-row;
+	width:100%;
+	background-image: url(2.png);
+	background-size: 100% 100%;
+}
+.tablediv{
+	display: table;         
+  	width: 100%; 
+}

@@ -1,0 +1,166 @@
+*,*:before,*:after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body{
+  background-image: url(2.jpg);
+  background-attachment: fixed;
+}
+.headr {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.headr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba( 84,87,60, 0.5);
+  z-index: 2;
+}
+.containers {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+.headrbody {
+  position: relative;
+  display: flex;
+  justify-content: space-between; 
+  height: 80px;
+  align-items: center;
+}
+.headrlogo {
+  flex: 0 0 200px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.headrlogo img{
+  max-width: 50%;
+  display: block;
+}
+.headrburger {
+  display: none;
+}
+.headrmenu {
+}
+.headrlist{
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.headrlist li{
+  list-style: none;
+  margin: 0px 0px 0px 20px;
+}
+.headrlink {
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.contents {
+  padding: 100px 0px 0px 0px;
+}
+.contenttext {
+
+  font-size: 16px;
+  line-height: 25px;
+}
+.contenttext p{
+  margin: 0px 0px 20px 0px;
+}
+@media (max-width: 767px){
+  .headrbody {
+    height: 50px;
+  }
+  .headrlogo{
+    flex: 0 0 100px;
+  }
+  .headrburger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .headrburger span{
+    position: absolute;
+    background-color: white;
+    left: 0px;
+    height: 2px;
+    top: 9px;
+    width: 100%;
+  }
+  .headrburger::before ,
+  .headrburger::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0px;
+  }
+  .headrburger::before {
+    bottom: 0;
+  }
+  .headrburger::after {
+    top: 0;
+  }
+  .headrmenu {
+    position: fixed;
+    top: -100%;
+    overflow: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 70px 10px 20px 10px;
+  }
+  .active{
+    transition: all 0.3s ease 0s;
+  }
+  .headrmenu.active{
+    top: 0;
+    background-color: rgba(204,119,34, 0.6);;
+    text-align: right;
+    height: 275px;
+  }
+  .contents.active{
+    padding: 275px 0px 0px 0px;
+  }
+  .headrburger.active span{
+    transform: scale(0);
+  }
+  .headrburger.active::before{
+    transform: rotate(45deg);
+    bottom: 9px;
+  }
+  .headrburger.active::after{
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+  .headrlist{
+    display: block;
+  }
+  .headrlist li{
+    margin: 0px 0px 20px 0px;
+  }
+  body.lock{
+    overflow: hidden;
+  }
+  .headrlink{
+  }
+}

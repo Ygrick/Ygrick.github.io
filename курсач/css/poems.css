@@ -1,0 +1,16 @@
+.main{
+	background-image: url(1.jpg);
+	text-align: center;
+	margin: 0 20%;
+}
+.imge{
+	width: 50%;
+}
+p{
+	font-size: 18px;
+}
+@media (max-width: 767px){
+	.main{
+		margin: 0;
+	}
+}
