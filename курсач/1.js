@@ -12,7 +12,7 @@ $(document).ready(function(){
 	    $( ".one.stih" ).show('slow');
 	    $( ".one.invisible" ).show('slow');
 	 });
-	$( ".invisible" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
+	$( ".one.invisible" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
 		$( ".one.invisible" ).hide('slow');
 		$( ".one.stih" ).hide('slow'); 
 	});
@@ -21,7 +21,7 @@ $(document).ready(function(){
 	    $( ".two.stih" ).show('slow'); 
 	    $( ".two.invisible" ).show('slow');
 	 });
-	$( ".invisible" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
+	$( ".two.invisible" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
 		$( ".two.invisible" ).hide('slow');
 		$( ".two.stih" ).hide('slow'); 
 	});
@@ -30,7 +30,7 @@ $(document).ready(function(){
 	    $( ".three.stih" ).show('slow'); 
 	    $( ".three.invisible" ).show('slow');
 	 });
-	$( ".invisible" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
+	$( ".three.invisible" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
 		$( ".three.invisible" ).hide('slow');
 		$( ".three.stih" ).hide('slow');
 	});
@@ -39,7 +39,7 @@ $(document).ready(function(){
 	    $( ".four.stih" ).show('slow'); 
 	    $( ".four.invisible" ).show('slow');
 	 });
-	$( ".invisible" ).click(function(){ 
+	$( ".four.invisible" ).click(function(){ 
 		$( ".four.invisible" ).hide('slow');
 		$( ".four.stih" ).hide('slow'); 
 	});

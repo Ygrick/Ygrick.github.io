@@ -1,7 +1,6 @@
-
 .tbl {
-  display: table;         
-  width: 100%;                   
+  display: table;
+  margin-bottom: 100px;            
 }
 .row{
 	display: table-row;
@@ -16,6 +15,14 @@
   	margin: 10px;     
   	text-align: center;
 }
-.stih{
-
+.imge{
+	width: 50%;
+}
+@media (max-width: 769px){
+	.column{
+		width: 100%;
+	}
+	.tbl{
+		margin-right: 15px;
+	}
 }
