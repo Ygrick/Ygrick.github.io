@@ -9,8 +9,40 @@
 p{
 	font-size: 18px;
 }
+
+.anchor{
+	height: 360px;
+	position: fixed;
+	padding: 40px 60px;
+	left: 0;
+	text-align: center;
+	background-image: url(aback.png);
+	background-size: 100% 100%;
+}
+.aanchor{
+	color: white;
+	display: block;
+	margin: 10% 0;
+}
+@media (max-width: 1439px){
+	.anchor{
+		position: static;
+		width: 50%;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
 @media (max-width: 767px){
 	.main{
+		margin: 0;
+	}
+	.anchor{
+		width: 80%;
+	}
+}
+@media (max-width: 424px){
+	.anchor{
+		width: 100%;
 		margin: 0;
 	}
 }
