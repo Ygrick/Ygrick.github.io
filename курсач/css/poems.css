@@ -13,7 +13,7 @@ p{
 .anchor{
 	height: 360px;
 	position: fixed;
-	padding: 40px 60px;
+	padding: 4%;
 	left: 0;
 	text-align: center;
 	background-image: url(aback.png);
@@ -38,11 +38,14 @@ p{
 	}
 	.anchor{
 		width: 80%;
+		padding-left: 6%
+		padding-right: 6%;
 	}
 }
 @media (max-width: 424px){
 	.anchor{
 		width: 100%;
 		margin: 0;
+		padding: 10%;
 	}
 }
