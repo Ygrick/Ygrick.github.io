@@ -44,7 +44,10 @@ p{
 		padding: 10% 3%;
 	}
 	p{
-		font-size: 25px;
+		font-size: 20px;
+	}
+	img{
+		max-height: 260px;
 	}
 }
 @media (max-width: 767px){
@@ -62,6 +65,24 @@ p{
 	}
 	.right{
 		padding-bottom: 10%;
+	}
+	.middle{
+		padding: 1% 5%;
+	}
+	p{
+		font-weight: normal;
+		font-size: 16px;
+	}
+}
+@media (max-width: 767px){
+	.divTableRow{
+		background-image: url(4.png);
+	}
+	.left{
+		padding-top: 30%;
+	}
+	.right{
+		padding-bottom: 30%;
 	}
 	.middle{
 		padding: 1% 5%;
